@@ -55,3 +55,13 @@ try {
 catch(error) {
   console.error(error);
 }
+
+try {
+    var nestedArray4 = 'String case';
+    var flattenarray4 = flatArray(flattenarray4);
+    console.log('flattenarray4', flattenarray4);
+
+}
+catch(error) {
+  console.error(error);
+}
