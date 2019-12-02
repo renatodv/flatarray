@@ -8,11 +8,11 @@
 function flatArray (nestedArray) {
 	var newArray = [];
 	nestedArray.forEach((element) => {
-		if (Number.isInteger(element)) {
-			newArray.push(element);
-		} else if (Array.isArray(element)){
-			newArray = newArray.concat(flatArray(element));
-		}
+        if (Array.isArray(element)) {
+            newArray = newArray.concat(flatArray(element));
+        } else {
+            newArray.push(element);
+        }
 	});
 	return newArray;
 }
