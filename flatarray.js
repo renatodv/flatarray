@@ -7,6 +7,7 @@
 
 function flatArray (nestedArray) {
 	var newArray = [];
+
 	nestedArray.forEach((element) => {
         if (Array.isArray(element)) {
             newArray = newArray.concat(flatArray(element));
@@ -14,6 +15,7 @@ function flatArray (nestedArray) {
             newArray.push(element);
         }
 	});
+    
 	return newArray;
 }
 
