@@ -38,7 +38,8 @@ var nestedArray = [
   ],
   nestedArray3 = 50,
   nestedArray4 = 'String case',
-  multipleCases = [nestedArray, nestedArray2, nestedArray3, nestedArray4];
+  nestedArray5 = null,
+  multipleCases = [nestedArray, nestedArray2, nestedArray3, nestedArray4, nestedArray5];
 
 multipleCases.forEach(function(singleCase) {
   try {
